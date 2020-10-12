@@ -1,0 +1,112 @@
+.plaatjescontainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.plaatje:hover {
+    display: none;
+    transition: display 2000ms ease-in 0ms;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.but {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.plaatjemetknop1 {
+    grid-area: a;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+}
+
+.plaatjemetknop2 {
+    grid-area: b;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+}
+
+.plaatjemetknop3 {
+    grid-area: c;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+}
+
+.plaatjemetknop4 {
+    grid-area: d;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+}
+
+.plaatjemetknop5 {
+    grid-area: e;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+}
+
+.plaatjemetknop6 {
+    grid-area: f;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+}
+
+.plaatjemetknop7 {
+    grid-area: g;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+}
+
+.plaatje {
+    position: relative;
+    display: inline-block;
+    transform: translateY(-100%);
+}
+
+.plaatjesmetknoppen {
+    display: grid;
+    grid-template-columns: 1f;
+    grid-template-rows: 1f 1f 1f 1f 1f 1f 1f;
+    grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+    height: 50%;
+    width: 50%;
+}
+
+@media (min-width: 600px) {
+    .plaatjesmetknoppen {
+        display: grid;
+        grid-template-columns: 1f 1f;
+        grid-template-rows: 1f 1f 1f;
+        grid-template-areas: "a b" "c d" "e f" "g .";
+        height: 50%;
+        width: 50%;
+    }
+}
+
+@media (min-width: 800px) {
+    .plaatjesmetknoppen {
+        display: grid;
+        grid-template-columns: 1f 1f 1f;
+        grid-template-rows: 1f 1f 1f;
+        grid-template-areas: "a b c" "d e f" "g . . ";
+        height: 50%;
+        width: 50%;
+    }
+}

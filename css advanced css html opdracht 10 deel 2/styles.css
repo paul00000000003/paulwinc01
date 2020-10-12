@@ -1,0 +1,138 @@
+.plaatjescontainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.plaatje:hover {
+  display: none;
+  -webkit-transition: display 2000ms ease-in 0ms;
+  transition: display 2000ms ease-in 0ms;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.but {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.plaatjemetknop1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+}
+
+.plaatjemetknop2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: b;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+}
+
+.plaatjemetknop3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: c;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+}
+
+.plaatjemetknop4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: d;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+}
+
+.plaatjemetknop5 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: e;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+}
+
+.plaatjemetknop6 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: f;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+}
+
+.plaatjemetknop7 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: g;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+}
+
+.plaatje {
+  position: relative;
+  display: inline-block;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.plaatjesmetknoppen {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1f;
+      grid-template-columns: 1f;
+  -ms-grid-rows: 1f 1f 1f 1f 1f 1f 1f;
+      grid-template-rows: 1f 1f 1f 1f 1f 1f 1f;
+      grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+  height: 50%;
+  width: 50%;
+}
+
+@media (min-width: 600px) {
+  .plaatjesmetknoppen {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1f 1f;
+        grid-template-columns: 1f 1f;
+    -ms-grid-rows: 1f 1f 1f;
+        grid-template-rows: 1f 1f 1f;
+        grid-template-areas: "a b" "c d" "e f" "g .";
+    height: 50%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  .plaatjesmetknoppen {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1f 1f 1f;
+        grid-template-columns: 1f 1f 1f;
+    -ms-grid-rows: 1f 1f 1f;
+        grid-template-rows: 1f 1f 1f;
+        grid-template-areas: "a b c" "d e f" "g . . ";
+    height: 50%;
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
