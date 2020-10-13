@@ -1,22 +1,32 @@
-.plaatjescontainer {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
 .plaatje:hover {
-  display: none;
-  -webkit-transition: display 2000ms ease-in 0ms;
-  transition: display 2000ms ease-in 0ms;
-  position: relative;
-  height: 100%;
-  width: 100%;
+  opacity: 0;
 }
 
 .but {
   position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+.plaatje {
+  position: relative;
+  background-color: red;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 1.0;
+  -webkit-transition: opacity 500ms ease-in 0ms;
+  transition: opacity 500ms ease-in 0ms;
+}
+
+.plaatjesmetknoppen {
   height: 100%;
-  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1f;
+      grid-template-columns: 1f;
+  -ms-grid-rows: 1f 1f 1f 1f 1f 1f 1f;
+      grid-template-rows: 1f 1f 1f 1f 1f 1f 1f;
+      grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
 }
 
 .plaatjemetknop1 {
@@ -24,8 +34,6 @@
   -ms-grid-column: 1;
   grid-area: a;
   position: relative;
-  height: 400px;
-  width: 400px;
   margin: 20px;
 }
 
@@ -34,9 +42,9 @@
   -ms-grid-column: 1;
   grid-area: b;
   position: relative;
-  height: 400px;
-  width: 400px;
   margin: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .plaatjemetknop3 {
@@ -44,9 +52,9 @@
   -ms-grid-column: 1;
   grid-area: c;
   position: relative;
-  height: 400px;
-  width: 400px;
   margin: 20px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .plaatjemetknop4 {
@@ -54,9 +62,9 @@
   -ms-grid-column: 1;
   grid-area: d;
   position: relative;
-  height: 400px;
-  width: 400px;
   margin: 20px;
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
 }
 
 .plaatjemetknop5 {
@@ -64,9 +72,9 @@
   -ms-grid-column: 1;
   grid-area: e;
   position: relative;
-  height: 400px;
-  width: 400px;
   margin: 20px;
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
 }
 
 .plaatjemetknop6 {
@@ -74,9 +82,9 @@
   -ms-grid-column: 1;
   grid-area: f;
   position: relative;
-  height: 400px;
-  width: 400px;
   margin: 20px;
+  -webkit-transform: translateY(-250%);
+          transform: translateY(-250%);
 }
 
 .plaatjemetknop7 {
@@ -84,28 +92,9 @@
   -ms-grid-column: 1;
   grid-area: g;
   position: relative;
-  height: 400px;
-  width: 400px;
   margin: 20px;
-}
-
-.plaatje {
-  position: relative;
-  display: inline-block;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-}
-
-.plaatjesmetknoppen {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1f;
-      grid-template-columns: 1f;
-  -ms-grid-rows: 1f 1f 1f 1f 1f 1f 1f;
-      grid-template-rows: 1f 1f 1f 1f 1f 1f 1f;
-      grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
-  height: 50%;
-  width: 50%;
+  -webkit-transform: translateY(-300%);
+          transform: translateY(-300%);
 }
 
 @media (min-width: 600px) {
@@ -120,10 +109,75 @@
     height: 50%;
     width: 50%;
   }
+  .plaatjemetknop2,
+  .plaatjemetknop3,
+  .plaatjemetknop4,
+  .plaatjemetknop5,
+  .plaatjemetknop6,
+  .plaatjemetknop7 {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .plaatjemetknop1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a;
+    margin: 20px;
+  }
+  .plaatjemetknop2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: b;
+    margin: 20px;
+  }
+  .plaatjemetknop3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: c;
+    margin: 20px;
+  }
+  .plaatjemetknop4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: d;
+    margin: 20px;
+  }
+  .plaatjemetknop3,
+  .plaatjemetknop4 {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .plaatjemetknop5 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: e;
+    margin: 20px;
+  }
+  .plaatjemetknop6 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: f;
+    margin: 20px;
+  }
+  .plaatjemetknop5,
+  .plaatjemetknop6 {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  .plaatjemetknop7 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: g;
+    margin: 20px;
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
 }
 
 @media (min-width: 800px) {
   .plaatjesmetknoppen {
+    height: 25%;
+    width: 25%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1f 1f 1f;
@@ -131,8 +185,60 @@
     -ms-grid-rows: 1f 1f 1f;
         grid-template-rows: 1f 1f 1f;
         grid-template-areas: "a b c" "d e f" "g . . ";
-    height: 50%;
-    width: 50%;
+  }
+  .plaatjemetknop1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a;
+    margin: 20px;
+  }
+  .plaatjemetknop2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: b;
+    margin: 20px;
+  }
+  .plaatjemetknop3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: c;
+    margin: 20px;
+  }
+  .plaatjemetknop3 {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .plaatjemetknop4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: d;
+    margin: 20px;
+  }
+  .plaatjemetknop5 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: e;
+    margin: 20px;
+  }
+  .plaatjemetknop6 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: f;
+    margin: 20px;
+  }
+  .plaatjemetknop4,
+  .plaatjemetknop5,
+  .plaatjemetknop6 {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .plaatjemetknop7 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: g;
+    margin: 20px;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 /*# sourceMappingURL=styles.css.map */
