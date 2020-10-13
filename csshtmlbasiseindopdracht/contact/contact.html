@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="contact.css" />
+</head>
+
+<body>
+    <h1>Contact</h1>
+    <p class="verzoek">
+        Indien u vragen heeft of een afspraak voor een proefrit wilt maken verzoeken <br /> wij u het onderstaande formulier in te vullen.
+    </p>
+    <form name="autocontact" method="POST" data-netlify="false">
+        <p>
+            <label>Naam : <input type="text" name="Naam" /></label>
+        </p>
+        <p>
+            <label>Email : <input type="email" name="emailadres" /></label>
+        </p>
+        <p>
+            <label>Telnr : <input type="tel" name="telnr" /></label>
+        </p>
+        <p class="dattijd">
+            <label>Afspraak proefrit : <input type="date" name="afspraakdatum"
+        /></label>
+            <label>Tijd : <input type="time" naam="afspraaktijdstip" /></label>
+        </p>
+
+        <br /><label>Vraag :
+        <div class="tekstbox">
+          <textarea cols="110" rows="10" class="vraag" name="vraag"></textarea>
+        </div>
+      </label>
+        <div class="beneden"></div>
+        <input class="button" type="submit" value="verstuur" />
+    </form>
+
+    <br /><br />
+    <a href="../index.html">Home page </a>
+</body>
+
+</html>

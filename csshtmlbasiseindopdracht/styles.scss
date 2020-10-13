@@ -1,0 +1,136 @@
+body {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+    color: rgb(34, 68, 112);
+}
+
+.verwijzingen>a {
+    text-decoration: none;
+    display: inline;
+    color: rgb(34, 68, 112);
+}
+
+header {
+    height: 20px;
+    padding: 5px;
+    width: 50%;
+    color: rgb(34, 68, 112);
+    background-color: rgb(241, 181, 181);
+}
+
+h1 {
+    width: 70%;
+    margin: 0;
+    padding: 40x;
+    text-decoration: bold;
+}
+
+h2 {
+    width: 50%;
+    margin: 0;
+    padding: 0px;
+}
+
+.par {
+    width: 25%;
+    margin: 2px;
+    padding: 5px;
+    background-color: rgb(241, 181, 181);
+}
+
+h3 {
+    margin: 0;
+    padding: 10px;
+    text-decoration: bold;
+    width: 50%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: width: 50%;
+    border: 3px solid black;
+    color: rgb(200, 0, 0);
+}
+
+a {
+    text-decoration: underline;
+    color: rgb(34, 68, 112);
+}
+
+figcaption.a {
+    color: rgb(200, 0, 0);
+}
+
+.par>h4 {
+    font-size: 25px;
+    text-decoration: bold;
+}
+
+.par>p {
+    font-family: Arial;
+}
+
+#onderschrift {
+    color: rgb(200, 0, 0);
+}
+
+.popautoos {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 70%;
+    color: rgb(34, 68, 112);
+}
+
+.mercedes,
+.jaguar,
+.rollsroyce,
+.chevrolet {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.mercedes a,
+.jaguar a,
+.rollsroyce a,
+.chevrolet a {
+    text-decoration: none;
+}
+
+.mercedes a:hover,
+.jaguar a:hover,
+.rollsroyce a:hover,
+.chevrolet a:hover {
+    text-decoration: underline;
+}
+
+.informatie {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1000px) {
+    .popautoos {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 70%;
+        color: rgb(50, 150, 250);
+    }
+    .informatie {
+        display: flex;
+        flex-direction: row;
+    }
+}

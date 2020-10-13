@@ -1,0 +1,16 @@
+body {
+    font-size: 40px;
+}
+
+th {
+    border: 6px black solid;
+    background-color: pink;
+}
+
+td {
+    border: 3px black solid;
+}
+
+.beneden {
+    height: 40px;
+}

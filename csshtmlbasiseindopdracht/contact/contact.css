@@ -1,0 +1,73 @@
+.verzoek {
+    font-size: 20px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(50, 150, 250);
+}
+
+h1 {
+    font-size: 80px;
+}
+
+p {
+    width: 90%;
+}
+
+input[type="text"] {
+    margin-left: 85px;
+    width: 45%;
+}
+
+input[type="email"] {
+    margin-left: 90px;
+    width: 45%;
+}
+
+input[type="tel"] {
+    margin-left: 100px;
+    width: 45%;
+}
+
+input[type="date"] {
+    margin-left: 0px;
+    width: 20%;
+}
+
+input[type="time"] {
+    width: 20%;
+}
+
+.dattijd {
+    display: inline;
+}
+
+p>input {
+    line-height: 0.5em;
+}
+
+.vraag {
+    margin: 0px 160px;
+}
+
+.tekstbox {
+    padding: 0;
+    margin: 0;
+    height: 40px;
+}
+
+.beneden {
+    height: 200px;
+}
+
+input[type="submit"]:hover {
+    background-color: red;
+}
+
+input[type="submit"] {
+    width: 20%;
+    font-size: 40px;
+    margin-left: 160px;
+}
