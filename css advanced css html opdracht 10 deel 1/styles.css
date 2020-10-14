@@ -1,0 +1,81 @@
+body {
+  height: 800px;
+  width: 600px;
+}
+
+.achtergrondbox {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #c3cfe2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.voorgrondbox {
+  position: relative;
+  height: 90%;
+  width: 90%;
+  border-radius: 30px;
+  /*border: 3px rgb(27, 27, 27) solid;*/
+  background-color: #fff;
+  margin-top: 30px;
+}
+
+.voorgrondbox .voorgrond_boven {
+  position: relative;
+  height: 50%;
+  background-color: #fff;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.voorgrondbox .voorgrond_boven .voorgrond_boven_tekst {
+  font-size: 35px;
+}
+
+.voorgrondbox .voorgrond_footer {
+  position: relative;
+  height: 45%;
+  background-color: #686de0;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.voorgrondbox .voorgrond_footer .fotocontainer {
+  margin: auto;
+  height: 180px;
+  width: 180px;
+}
+
+.voorgrondbox .voorgrond_footer .fotocontainer .foto {
+  position: relative;
+  border-radius: 90px;
+  -webkit-transform: translateY(-85px);
+          transform: translateY(-85px);
+  background-color: white;
+  padding: 10px;
+}
+
+.voorgrondbox .voorgrond_footer .footer_tekst {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  margin: 0px;
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+}
+
+.voorgrondbox .voorgrond_footer .footer_tekst h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.voorgrondbox .voorgrond_footer .footer_tekst p {
+  color: #c3cfe2;
+}
+/*# sourceMappingURL=styles.css.map */
