@@ -1,0 +1,181 @@
+body {
+  width: 100;
+  height: 100;
+  font-size: 40px;
+}
+
+.social-media {
+  height: 100vh;
+  width: 100%;
+  border: 3px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reference {
+  opacity: 0;
+}
+
+.blog-button,
+.twitter-button,
+.linkedin-button,
+.facebook-button,
+.github-button {
+  height: 12%;
+  width: 6%;
+  -webkit-transition: all 2000ms ease-in 0ms;
+  transition: all 2000ms ease-in 0ms;
+}
+
+.blog-button a,
+.twitter-button a,
+.linkedin-button a,
+.facebook-button a,
+.github-button a {
+  padding: 0px;
+  margin: 0px;
+  font-size: 40px;
+}
+
+.blog-icon,
+.twitter-icon,
+.linkedin-icon,
+.facebook-icon,
+.github-icon {
+  height: 100%;
+  width: 100%;
+}
+
+.blog-button {
+  background-color: #e17b77;
+}
+
+.blog-button:hover {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-button:hover .blog-icon {
+  height: 100%;
+  width: 30%;
+  margin-right: 5%;
+}
+
+.blog-button:hover .reference {
+  height: 100%;
+  width: 80%;
+  opacity: 1;
+}
+
+.twitter-button {
+  background-color: #00aced;
+}
+
+.twitter-button:hover {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.twitter-button:hover .twitter-icon {
+  height: 100%;
+  width: 20%;
+  margin-right: 5%;
+}
+
+.twitter-button:hover .reference {
+  height: 100%;
+  width: 80%;
+  opacity: 1;
+}
+
+.linkedin-button {
+  background-color: #007bb6;
+}
+
+.linkedin-button:hover {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.linkedin-button:hover .linkedin-icon {
+  height: 100%;
+  width: 20%;
+  margin-right: 5%;
+}
+
+.linkedin-button:hover .reference {
+  height: 100%;
+  width: 80%;
+  opacity: 1;
+}
+
+.facebook-button {
+  background-color: #3b5998;
+}
+
+.facebook-button:hover {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.facebook-button:hover .facebook-icon {
+  height: 100%;
+  width: 20%;
+  margin-right: 5%;
+}
+
+.facebook-button:hover .reference {
+  height: 100%;
+  width: 80%;
+  opacity: 1;
+}
+
+.github-button {
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.github-button:hover {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.github-button:hover .github-icon {
+  height: 100%;
+  width: 20%;
+  margin-right: 5%;
+}
+
+.github-button:hover .reference {
+  height: 100%;
+  width: 80%;
+  opacity: 1;
+}
+
+.bottomspace {
+  height: 10vh;
+}
+/*# sourceMappingURL=style.css.map */
