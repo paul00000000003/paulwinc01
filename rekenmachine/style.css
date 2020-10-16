@@ -1,0 +1,48 @@
+
+
+#button1,#button2,#button3,
+#button4,#button5,#button6,
+#button7,#button8,#button9,
+#button0,#komma   {font-size : 30px;
+                   height : 60px;
+                   width  : 60px;
+                   background-color : grey;}
+
+#buttonberek {font-size: 30px;
+              height : 60px;
+              width  : 60px;
+              background-color : orange;}
+#clear {font-size: 30px; 
+        height : 60px;
+        width  : 60px;
+        background-color:aquamarine;}
+
+
+#buttonplus,#buttonmin,#buttontimes,#buttondivide,#haakjeopen,#haakjegesloten {height : 60px;
+             width  : 60px;
+             font-size : 30px;
+             background-color : red;}
+#leegte {height : 60px;
+         width  : 60px;
+         font-size : 30px;
+         background-color : white;}
+
+#Gegevens {height : 200px;
+           width  : 700px; 
+           margin :  2px;
+           padding : 2px; 
+           border : 10px 10px 10px 10px;
+           border : black black black black;
+           border : solid;  
+           float  : left; 
+           } 
+
+#inhoudsom,#uitkomst,#msg {font-size : 30px;}
+
+
+
+#div1,#div2{float : left;}
+
+#blanco {width : 100px; }
+
+.paars {color:purple;}
