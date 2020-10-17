@@ -1,0 +1,133 @@
+body {
+  height: 100hv;
+  width: 100%;
+  border: 3px yellow solid;
+}
+
+.but {
+  width: 100%;
+  height: 50%;
+}
+
+.plaatje {
+  width: 100%;
+  height: 50%;
+}
+
+.plaatjesMetKnoppen {
+  width: 60%;
+  height: 60%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "a b c ";
+}
+
+.plaatjeMetKnop1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+  margin: 20px;
+  border: red 3px solid;
+}
+
+.plaatjeMetKnop1 .plaatje {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 1;
+  -webkit-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+}
+
+.plaatjeMetKnop2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: b;
+  margin: 20px;
+  border: red 3px solid;
+}
+
+.plaatjeMetKnop2 .plaatje {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 1;
+  -webkit-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+}
+
+.plaatjeMetKnop3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: c;
+  margin: 20px;
+  border: red 3px solid;
+}
+
+.plaatjeMetKnop3 .plaatje {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 1;
+  -webkit-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+}
+
+/*
+.plaatjeMetKnop4,
+.plaatjeMetKnop5,
+.plaatjeMetKnop6 {
+    transform: translateY(-50%);
+}
+
+
+.plaatjeMetKnop4 {
+    grid-area: d;
+    margin: 20px;
+    .plaatje {
+        transform: translateY(-100%);
+        opacity: 1;
+        transition: opacity 500ms ease-in;
+    }
+}
+
+
+
+
+
+
+.plaatjeMetKnop5 {
+    grid-area: e;
+    margin: 20px;
+    .plaatje {
+        transform: translateY(-100%);
+        opacity: 1;
+        transition: opacity 500ms ease-in;
+    }
+}
+
+.plaatjeMetKnop6 {
+    grid-area: f;
+    margin: 20px;
+    .plaatje {
+        transform: translateY(-100%);
+        opacity: 1;
+        transition: opacity 500ms ease-in;
+    }
+}
+
+
+
+.plaatjeMetKnop7 {
+    grid-area: g;
+    margin: 20px;
+    .plaatje {
+        transform: translateY(-100%);
+    }
+}
+*/
+.plaatje:hover {
+  opacity: 0;
+}
+/*# sourceMappingURL=styles.css.map */
