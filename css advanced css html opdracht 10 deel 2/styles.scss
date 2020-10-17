@@ -1,45 +1,5 @@
-@mixin koppelAreas {
-    .plaatjes-1 {
-        grid-area: a;
-        margin: 20px;
-    }
-    .plaatjes-2 {
-        grid-area: b;
-        margin: 20px;
-    }
-    .plaatjes-3 {
-        grid-area: c;
-        margin: 20px;
-    }
-    .plaatjes-4 {
-        grid-area: d;
-        margin: 20px;
-    }
-    .plaatjes-5 {
-        grid-area: e;
-        margin: 20px;
-    }
-    .plaatjes-6 {
-        grid-area: f;
-        margin: 20px;
-    }
-    .plaatjes-7 {
-        grid-area: g;
-        margin: 20px;
-    }
-}
-
-@mixin stelRijVerschuivingDefault() {
-    .plaatjes-2,
-    .plaatjes-3,
-    .plaatjes-4,
-    .plaatjes-5,
-    .plaatjes-6,
-    .plaatjes-7 {
-        transform: translateY(0);
-    }
-}
-
+$hoogte: 200px;
+$breedte:200px;
 body {
     height: 100vh;
     width: 100%;
@@ -47,15 +7,15 @@ body {
 
 .plaatjes-button {
     position: relative;
-    height: 200px;
-    width: 200px;
+    height: $hoogte;
+    width: $breedte;
 }
 
 .plaatjes-img {
     position: relative;
-    height: 200px;
+    height: $hoogte;
     border-radius: 50px;
-    width: 200px;
+    width: $breedte;
     transform: translateY(-100%);
     opacity: 1.0;
     transition: opacity 500ms ease-in 0ms;
@@ -68,66 +28,27 @@ body {
     height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-columns: 1f;
-    grid-template-rows: 1f 1f 1f 1f 1f 1f 1f;
-    grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+    grid-template-columns: 240px;
+    grid-template-rows: repeat(7, 240px);
 }
 
-@include koppelAreas();
-.plaatjes-2 {
-    transform: translateY(-50%);
-}
-
-.plaatjes-3 {
-    transform: translateY(-100%);
-}
-
-.plaatjes-4 {
-    transform: translateY(-150%);
-}
-
-.plaatjes-5 {
-    transform: translateY(-200%);
-}
-
-.plaatjes-6 {
-    transform: translateY(-250%);
-}
-
+.plaatjes-1,
+.plaatjes-2,
+.plaatjes-3,
+.plaatjes-4,
+.plaatjes-5,
+.plaatjes-6,
 .plaatjes-7 {
-    transform: translateY(-300%);
+    margin: 20px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
     .plaatjes {
         height: 100vh;
         width: 50%;
         display: grid;
-        grid-template-columns: 1f 1f;
-        grid-template-rows: 1f 1f 1f;
-        grid-template-areas: "a b" "c d" "e f" "g .";
-    }
-    @include koppelAreas();
-    @include stelRijVerschuivingDefault();
-    .plaatjes-3,
-    .plaatjes-4 {
-        transform: translateY(-50%);
-    }
-    .plaatjes-5,
-    .plaatjes-6 {
-        transform: translateY(-100%);
-    }
-    .plaatjes-7 {
-        transform: translateY(-150%);
-    }
-    .plaatjes-1,
-    .plaatjes-2,
-    .plaatjes-3,
-    .plaatjes-4,
-    .plaatjes-5,
-    .plaatjes-6,
-    .plaatjes-7 {
-        margin: 20px;
+        grid-template-columns: repeat(2, 240px);
+        grid-template-rows: repeat(3, 240px);
     }
 }
 
@@ -136,22 +57,7 @@ body {
         height: 50vh;
         width: 50%;
         display: grid;
-        grid-template-columns: 1f 1f 1f;
-        grid-template-rows: 1f 1f 1f;
-        grid-template-areas: "a b c" "d e f" "g . . ";
-    }
-    @include koppelAreas();
-    /* het werkte om de een of andere reden niet lekker als ik dit niet herdefinieer */
-    @include stelRijVerschuivingDefault();
-    .plaatjes-3 {
-        transform: translateY(0);
-    }
-    .plaatjes-4,
-    .plaatjes-5,
-    .plaatjes-6 {
-        transform: translateY(-50%);
-    }
-    .plaatjes-7 {
-        transform: translateY(-100%);
+        grid-template-columns: repeat(3, 240px);
+        grid-template-rows: repeat(3, 240px);
     }
 }

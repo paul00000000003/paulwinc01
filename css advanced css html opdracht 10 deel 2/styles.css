@@ -30,177 +30,32 @@ body {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1f;
-      grid-template-columns: 1f;
-  -ms-grid-rows: 1f 1f 1f 1f 1f 1f 1f;
-      grid-template-rows: 1f 1f 1f 1f 1f 1f 1f;
-      grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+  -ms-grid-columns: 240px;
+      grid-template-columns: 240px;
+  -ms-grid-rows: (240px)[7];
+      grid-template-rows: repeat(7, 240px);
 }
 
-.plaatjes-1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: a;
-  margin: 20px;
-}
-
-.plaatjes-2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: b;
-  margin: 20px;
-}
-
-.plaatjes-3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: c;
-  margin: 20px;
-}
-
-.plaatjes-4 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: d;
-  margin: 20px;
-}
-
-.plaatjes-5 {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: e;
-  margin: 20px;
-}
-
-.plaatjes-6 {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: f;
-  margin: 20px;
-}
-
+.plaatjes-1,
+.plaatjes-2,
+.plaatjes-3,
+.plaatjes-4,
+.plaatjes-5,
+.plaatjes-6,
 .plaatjes-7 {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  grid-area: g;
   margin: 20px;
 }
 
-.plaatjes-2 {
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.plaatjes-3 {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-}
-
-.plaatjes-4 {
-  -webkit-transform: translateY(-150%);
-          transform: translateY(-150%);
-}
-
-.plaatjes-5 {
-  -webkit-transform: translateY(-200%);
-          transform: translateY(-200%);
-}
-
-.plaatjes-6 {
-  -webkit-transform: translateY(-250%);
-          transform: translateY(-250%);
-}
-
-.plaatjes-7 {
-  -webkit-transform: translateY(-300%);
-          transform: translateY(-300%);
-}
-
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .plaatjes {
     height: 100vh;
     width: 50%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1f 1f;
-        grid-template-columns: 1f 1f;
-    -ms-grid-rows: 1f 1f 1f;
-        grid-template-rows: 1f 1f 1f;
-        grid-template-areas: "a b" "c d" "e f" "g .";
-  }
-  .plaatjes-1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: a;
-    margin: 20px;
-  }
-  .plaatjes-2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: b;
-    margin: 20px;
-  }
-  .plaatjes-3 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: c;
-    margin: 20px;
-  }
-  .plaatjes-4 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: d;
-    margin: 20px;
-  }
-  .plaatjes-5 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: e;
-    margin: 20px;
-  }
-  .plaatjes-6 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    grid-area: f;
-    margin: 20px;
-  }
-  .plaatjes-7 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    grid-area: g;
-    margin: 20px;
-  }
-  .plaatjes-2,
-  .plaatjes-3,
-  .plaatjes-4,
-  .plaatjes-5,
-  .plaatjes-6,
-  .plaatjes-7 {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  .plaatjes-3,
-  .plaatjes-4 {
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  .plaatjes-5,
-  .plaatjes-6 {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  .plaatjes-7 {
-    -webkit-transform: translateY(-150%);
-            transform: translateY(-150%);
-  }
-  .plaatjes-1,
-  .plaatjes-2,
-  .plaatjes-3,
-  .plaatjes-4,
-  .plaatjes-5,
-  .plaatjes-6,
-  .plaatjes-7 {
-    margin: 20px;
+    -ms-grid-columns: (240px)[2];
+        grid-template-columns: repeat(2, 240px);
+    -ms-grid-rows: (240px)[3];
+        grid-template-rows: repeat(3, 240px);
   }
 }
 
@@ -210,77 +65,10 @@ body {
     width: 50%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1f 1f 1f;
-        grid-template-columns: 1f 1f 1f;
-    -ms-grid-rows: 1f 1f 1f;
-        grid-template-rows: 1f 1f 1f;
-        grid-template-areas: "a b c" "d e f" "g . . ";
-  }
-  .plaatjes-1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: a;
-    margin: 20px;
-  }
-  .plaatjes-2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: b;
-    margin: 20px;
-  }
-  .plaatjes-3 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    grid-area: c;
-    margin: 20px;
-  }
-  .plaatjes-4 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: d;
-    margin: 20px;
-  }
-  .plaatjes-5 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: e;
-    margin: 20px;
-  }
-  .plaatjes-6 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-    grid-area: f;
-    margin: 20px;
-  }
-  .plaatjes-7 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: g;
-    margin: 20px;
-  }
-  /* het werkte om de een of andere reden niet lekker als ik dit niet herdefinieer */
-  .plaatjes-2,
-  .plaatjes-3,
-  .plaatjes-4,
-  .plaatjes-5,
-  .plaatjes-6,
-  .plaatjes-7 {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  .plaatjes-3 {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  .plaatjes-4,
-  .plaatjes-5,
-  .plaatjes-6 {
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  .plaatjes-7 {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -ms-grid-columns: (240px)[3];
+        grid-template-columns: repeat(3, 240px);
+    -ms-grid-rows: (240px)[3];
+        grid-template-rows: repeat(3, 240px);
   }
 }
 /*# sourceMappingURL=styles.css.map */
