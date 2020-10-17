@@ -5,7 +5,7 @@ body {
     font-size: 40px;
 }
 
-.social-media {
+.socialmedia {
     height: 100vh;
     width: 100%;
     border: 3px solid black;
@@ -16,7 +16,11 @@ body {
     flex-direction: column;
 }
 
-.reference {
+.blog-button__reference,
+.twitter-button__reference,
+.linkedin-button__reference,
+.facebook-button__reference,
+.github-button__reference {
     opacity: 0;
 }
 
@@ -27,7 +31,8 @@ body {
 .github-button {
     height: 12%;
     width: 6%;
-    transition: all 2000ms ease-in 0ms;
+    transition: opacity 500ms ease-out 1500ms;
+    transition: width 2000ms ease-in 0ms;
     a {
         padding: 0px;
         margin: 0px;
@@ -35,26 +40,21 @@ body {
     }
 }
 
-.blog-icon,
-.twitter-icon,
-.linkedin-icon,
-.facebook-icon,
-.github-icon {
-    height: 100%;
-    width: 100%;
+.blog-button__icon,
+.twitter-button__icon,
+.linkedin-button__icon,
+.facebook-button__icon,
+.github-button__icon {
+    height: 100px;
+    width: 100px;
 }
 
 .blog-button {
     background-color: #e17b77;
+    display: flex;
     &:hover {
         width: $buttonbreedte;
-        display: flex;
-        .blog-icon {
-            height: 100%;
-            width: 30%;
-            margin-right: 5%;
-        }
-        .reference {
+        .blog-button__reference {
             height: 100%;
             width: 80%;
             opacity: 1;
@@ -64,15 +64,10 @@ body {
 
 .twitter-button {
     background-color: #00aced;
+    display: flex;
     &:hover {
         width: $buttonbreedte;
-        display: flex;
-        .twitter-icon {
-            height: 100%;
-            width: 20%;
-            margin-right: 5%;
-        }
-        .reference {
+        .twitter-button__reference {
             height: 100%;
             width: 80%;
             opacity: 1;
@@ -82,15 +77,10 @@ body {
 
 .linkedin-button {
     background-color: #007bb6;
+    display: flex;
     &:hover {
         width: $buttonbreedte;
-        display: flex;
-        .linkedin-icon {
-            height: 100%;
-            width: 20%;
-            margin-right: 5%;
-        }
-        .reference {
+        .linkedin-button__reference {
             height: 100%;
             width: 80%;
             opacity: 1;
@@ -103,12 +93,7 @@ body {
     &:hover {
         width: $buttonbreedte;
         display: flex;
-        .facebook-icon {
-            height: 100%;
-            width: 20%;
-            margin-right: 5%;
-        }
-        .reference {
+        .facebook-button__reference {
             height: 100%;
             width: 80%;
             opacity: 1;
@@ -122,12 +107,7 @@ body {
     &:hover {
         width: $buttonbreedte;
         display: flex;
-        .github-icon {
-            height: 100%;
-            width: 20%;
-            margin-right: 5%;
-        }
-        .reference {
+        .github-button__reference {
             height: 100%;
             width: 80%;
             opacity: 1;
@@ -135,6 +115,6 @@ body {
     }
 }
 
-.bottomspace {
+.socialmedia__bottomspace {
     height: 10vh;
 }

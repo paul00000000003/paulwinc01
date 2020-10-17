@@ -4,7 +4,7 @@ body {
   font-size: 40px;
 }
 
-.social-media {
+.socialmedia {
   height: 100vh;
   width: 100%;
   border: 3px solid black;
@@ -25,7 +25,11 @@ body {
           flex-direction: column;
 }
 
-.reference {
+.blog-button__reference,
+.twitter-button__reference,
+.linkedin-button__reference,
+.facebook-button__reference,
+.github-button__reference {
   opacity: 0;
 }
 
@@ -36,8 +40,10 @@ body {
 .github-button {
   height: 12%;
   width: 6%;
-  -webkit-transition: all 2000ms ease-in 0ms;
-  transition: all 2000ms ease-in 0ms;
+  -webkit-transition: opacity 500ms ease-out 1500ms;
+  transition: opacity 500ms ease-out 1500ms;
+  -webkit-transition: width 2000ms ease-in 0ms;
+  transition: width 2000ms ease-in 0ms;
 }
 
 .blog-button a,
@@ -50,33 +56,27 @@ body {
   font-size: 40px;
 }
 
-.blog-icon,
-.twitter-icon,
-.linkedin-icon,
-.facebook-icon,
-.github-icon {
-  height: 100%;
-  width: 100%;
+.blog-button__icon,
+.twitter-button__icon,
+.linkedin-button__icon,
+.facebook-button__icon,
+.github-button__icon {
+  height: 100px;
+  width: 100px;
 }
 
 .blog-button {
   background-color: #e17b77;
-}
-
-.blog-button:hover {
-  width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.blog-button:hover .blog-icon {
-  height: 100%;
-  width: 30%;
-  margin-right: 5%;
+.blog-button:hover {
+  width: 35%;
 }
 
-.blog-button:hover .reference {
+.blog-button:hover .blog-button__reference {
   height: 100%;
   width: 80%;
   opacity: 1;
@@ -84,22 +84,16 @@ body {
 
 .twitter-button {
   background-color: #00aced;
-}
-
-.twitter-button:hover {
-  width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.twitter-button:hover .twitter-icon {
-  height: 100%;
-  width: 20%;
-  margin-right: 5%;
+.twitter-button:hover {
+  width: 35%;
 }
 
-.twitter-button:hover .reference {
+.twitter-button:hover .twitter-button__reference {
   height: 100%;
   width: 80%;
   opacity: 1;
@@ -107,22 +101,16 @@ body {
 
 .linkedin-button {
   background-color: #007bb6;
-}
-
-.linkedin-button:hover {
-  width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.linkedin-button:hover .linkedin-icon {
-  height: 100%;
-  width: 20%;
-  margin-right: 5%;
+.linkedin-button:hover {
+  width: 35%;
 }
 
-.linkedin-button:hover .reference {
+.linkedin-button:hover .linkedin-button__reference {
   height: 100%;
   width: 80%;
   opacity: 1;
@@ -139,13 +127,7 @@ body {
   display: flex;
 }
 
-.facebook-button:hover .facebook-icon {
-  height: 100%;
-  width: 20%;
-  margin-right: 5%;
-}
-
-.facebook-button:hover .reference {
+.facebook-button:hover .facebook-button__reference {
   height: 100%;
   width: 80%;
   opacity: 1;
@@ -163,19 +145,13 @@ body {
   display: flex;
 }
 
-.github-button:hover .github-icon {
-  height: 100%;
-  width: 20%;
-  margin-right: 5%;
-}
-
-.github-button:hover .reference {
+.github-button:hover .github-button__reference {
   height: 100%;
   width: 80%;
   opacity: 1;
 }
 
-.bottomspace {
+.socialmedia__bottomspace {
   height: 10vh;
 }
 /*# sourceMappingURL=style.css.map */
