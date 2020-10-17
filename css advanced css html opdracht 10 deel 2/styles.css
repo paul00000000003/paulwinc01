@@ -1,24 +1,19 @@
-@charset "UTF-8";
 body {
   height: 100vh;
   width: 100%;
 }
 
-.but {
+.plaatjes__but {
   position: relative;
   height: 200px;
-  /*dit is een buck. Ik had verwacht dit als percentage van het containerelement plaatjesmetknoppen te kunnen definieren, maar dat werkt niet lekker 
-                       waarom niet ? Hierdoor wordt mijn userresponsiveness geruïneerd */
   width: 200px;
 }
 
-.plaatje {
+.plaatjes__img {
   position: relative;
   height: 200px;
-  /*dit is een buck. Ik had verwacht dit als percentage van het containerelement plaatjesmetknoppen te kunnen definieren, maar dat werkt niet lekker 
-                      waarom niet ? Hierdoor wordt mijn userresponsiveness geruïneerd */
+  border-radius: 50px;
   width: 200px;
-  background-color: red;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   opacity: 1.0;
@@ -26,13 +21,13 @@ body {
   transition: opacity 500ms ease-in 0ms;
 }
 
-.plaatje:hover {
+.plaatjes__img:hover {
   opacity: 0;
 }
 
-.plaatjesmetknoppen {
+.plaatjes {
   height: 100vh;
-  width: 100%;
+  width: 30%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1f;
@@ -42,89 +37,89 @@ body {
       grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
 }
 
-.plaatjemetknop1 {
+.plaatjes-1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: a;
   margin: 20px;
 }
 
-.plaatjemetknop2 {
+.plaatjes-2 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: b;
   margin: 20px;
 }
 
-.plaatjemetknop3 {
+.plaatjes-3 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: c;
   margin: 20px;
 }
 
-.plaatjemetknop4 {
+.plaatjes-4 {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: d;
   margin: 20px;
 }
 
-.plaatjemetknop5 {
+.plaatjes-5 {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: e;
   margin: 20px;
 }
 
-.plaatjemetknop6 {
+.plaatjes-6 {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: f;
   margin: 20px;
 }
 
-.plaatjemetknop7 {
+.plaatjes-7 {
   -ms-grid-row: 7;
   -ms-grid-column: 1;
   grid-area: g;
   margin: 20px;
 }
 
-.plaatjemetknop2 {
+.plaatjes-2 {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
-.plaatjemetknop3 {
+.plaatjes-3 {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
 
-.plaatjemetknop4 {
+.plaatjes-4 {
   -webkit-transform: translateY(-150%);
           transform: translateY(-150%);
 }
 
-.plaatjemetknop5 {
+.plaatjes-5 {
   -webkit-transform: translateY(-200%);
           transform: translateY(-200%);
 }
 
-.plaatjemetknop6 {
+.plaatjes-6 {
   -webkit-transform: translateY(-250%);
           transform: translateY(-250%);
 }
 
-.plaatjemetknop7 {
+.plaatjes-7 {
   -webkit-transform: translateY(-300%);
           transform: translateY(-300%);
 }
 
-@media (min-width: 600px) {
-  .plaatjesmetknoppen {
+@media (min-width: 700px) {
+  .plaatjes {
     height: 100vh;
-    width: 50%;
+    width: 30%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1f 1f;
@@ -133,86 +128,86 @@ body {
         grid-template-rows: 1f 1f 1f;
         grid-template-areas: "a b" "c d" "e f" "g .";
   }
-  .plaatjemetknop1 {
+  .plaatjes-1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: a;
     margin: 20px;
   }
-  .plaatjemetknop2 {
+  .plaatjes-2 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: b;
     margin: 20px;
   }
-  .plaatjemetknop3 {
+  .plaatjes-3 {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: c;
     margin: 20px;
   }
-  .plaatjemetknop4 {
+  .plaatjes-4 {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: d;
     margin: 20px;
   }
-  .plaatjemetknop5 {
+  .plaatjes-5 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: e;
     margin: 20px;
   }
-  .plaatjemetknop6 {
+  .plaatjes-6 {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
     grid-area: f;
     margin: 20px;
   }
-  .plaatjemetknop7 {
+  .plaatjes-7 {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: g;
     margin: 20px;
   }
-  .plaatjemetknop2,
-  .plaatjemetknop3,
-  .plaatjemetknop4,
-  .plaatjemetknop5,
-  .plaatjemetknop6,
-  .plaatjemetknop7 {
+  .plaatjes-2,
+  .plaatjes-3,
+  .plaatjes-4,
+  .plaatjes-5,
+  .plaatjes-6,
+  .plaatjes-7 {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-  .plaatjemetknop3,
-  .plaatjemetknop4 {
+  .plaatjes-3,
+  .plaatjes-4 {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-  .plaatjemetknop5,
-  .plaatjemetknop6 {
+  .plaatjes-5,
+  .plaatjes-6 {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
   }
-  .plaatjemetknop7 {
+  .plaatjes-7 {
     -webkit-transform: translateY(-150%);
             transform: translateY(-150%);
   }
-  .plaatjemetknop1,
-  .plaatjemetknop2,
-  .plaatjemetknop3,
-  .plaatjemetknop4,
-  .plaatjemetknop5,
-  .plaatjemetknop6,
-  .plaatjemetknop7 {
+  .plaatjes-1,
+  .plaatjes-2,
+  .plaatjes-3,
+  .plaatjes-4,
+  .plaatjes-5,
+  .plaatjes-6,
+  .plaatjes-7 {
     margin: 20px;
   }
 }
 
-@media (min-width: 800px) {
-  .plaatjesmetknoppen {
-    height: 50vh;
-    width: 50%;
+@media (min-width: 1024px) {
+  .plaatjes {
+    height: 100vh;
+    width: 30%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1f 1f 1f;
@@ -221,71 +216,80 @@ body {
         grid-template-rows: 1f 1f 1f;
         grid-template-areas: "a b c" "d e f" "g . . ";
   }
-  .plaatjemetknop1 {
+  .plaatjes-1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: a;
     margin: 20px;
   }
-  .plaatjemetknop2 {
+  .plaatjes-2 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: b;
     margin: 20px;
   }
-  .plaatjemetknop3 {
+  .plaatjes-3 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
     grid-area: c;
     margin: 20px;
   }
-  .plaatjemetknop4 {
+  .plaatjes-4 {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: d;
     margin: 20px;
   }
-  .plaatjemetknop5 {
+  .plaatjes-5 {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: e;
     margin: 20px;
   }
-  .plaatjemetknop6 {
+  .plaatjes-6 {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
     grid-area: f;
     margin: 20px;
   }
-  .plaatjemetknop7 {
+  .plaatjes-7 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: g;
     margin: 20px;
   }
-  /* het werkte om de een of andere reden niet lekker als ik dit niet herdefinieer */
-  .plaatjemetknop2,
-  .plaatjemetknop3,
-  .plaatjemetknop4,
-  .plaatjemetknop5,
-  .plaatjemetknop6,
-  .plaatjemetknop7 {
+  .plaatjes-2,
+  .plaatjes-3,
+  .plaatjes-4,
+  .plaatjes-5,
+  .plaatjes-6,
+  .plaatjes-7 {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-  .plaatjemetknop3 {
+  .plaatjes-3 {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-  .plaatjemetknop4,
-  .plaatjemetknop5,
-  .plaatjemetknop6 {
+  .plaatjes-4,
+  .plaatjes-5,
+  .plaatjes-6 {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-  .plaatjemetknop7 {
+  .plaatjes-7 {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
+  }
+  .plaatjes-1,
+  .plaatjes-2,
+  .plaatjes-3,
+  .plaatjes-4,
+  .plaatjes-5,
+  .plaatjes-6,
+  .plaatjes-7 {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
