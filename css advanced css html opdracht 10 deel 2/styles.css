@@ -3,13 +3,13 @@ body {
   width: 100%;
 }
 
-.plaatjes__but {
+.plaatjes-button {
   position: relative;
   height: 200px;
   width: 200px;
 }
 
-.plaatjes__img {
+.plaatjes-img {
   position: relative;
   height: 200px;
   border-radius: 50px;
@@ -21,13 +21,13 @@ body {
   transition: opacity 500ms ease-in 0ms;
 }
 
-.plaatjes__img:hover {
+.plaatjes-img:hover {
   opacity: 0;
 }
 
 .plaatjes {
   height: 100vh;
-  width: 30%;
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1f;
@@ -116,10 +116,10 @@ body {
           transform: translateY(-300%);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   .plaatjes {
     height: 100vh;
-    width: 30%;
+    width: 50%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1f 1f;
@@ -206,8 +206,8 @@ body {
 
 @media (min-width: 1024px) {
   .plaatjes {
-    height: 100vh;
-    width: 30%;
+    height: 50vh;
+    width: 50%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1f 1f 1f;
@@ -258,6 +258,7 @@ body {
     grid-area: g;
     margin: 20px;
   }
+  /* het werkte om de een of andere reden niet lekker als ik dit niet herdefinieer */
   .plaatjes-2,
   .plaatjes-3,
   .plaatjes-4,
@@ -280,16 +281,6 @@ body {
   .plaatjes-7 {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
-  }
-  .plaatjes-1,
-  .plaatjes-2,
-  .plaatjes-3,
-  .plaatjes-4,
-  .plaatjes-5,
-  .plaatjes-6,
-  .plaatjes-7 {
-    margin-left: 20px;
-    margin-right: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
