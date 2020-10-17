@@ -1,66 +1,63 @@
-        body {
-            height: 800px;
-            width: 600px;
-        }
-        
-        .achtergrondbox {
+$testimonial-width: 90%;
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.achterGrondbox {
+    position: relative;
+    height: 100vh;
+    width: 45%;
+    background-color: #c3cfe2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.voorgrond-boven {
+    height: 50%;
+    width: $testimonial-width;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-size: 35px;
+}
+
+.voorgrond-onder {
+    height: 50%;
+    width: $testimonial-width;
+    background-color: #686de0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 0px;
+    margin: auto;
+    margin-bottom: 30px;
+    .voorgrond-onder__fotoContainer {
+        margin: auto;
+        height: 180px;
+        width: 180px;
+        .voorgrond-onder__fotoContainer__foto {
             position: relative;
-            height: 100%;
-            width: 100%;
-            background-color: #c3cfe2;
-            display: flex;
-            justify-content: center;
+            border-radius: 90px;
+            transform: translateY(-85px);
+            background-color: white;
+            padding: 10px;
         }
-        
-        .voorgrondbox {
-            position: relative;
-            height: 90%;
-            width: 90%;
-            border-radius: 30px;
-            /*border: 3px rgb(27, 27, 27) solid;*/
-            background-color: #fff;
-            margin-top: 30px;
-            .voorgrond_boven {
-                position: relative;
-                height: 50%;
-                background-color: #fff;
-                border-top-left-radius: 30px;
-                border-top-right-radius: 30px;
-                .voorgrond_boven_tekst {
-                    font-size: 35px;
-                }
-            }
-            .voorgrond_footer {
-                position: relative;
-                height: 45%;
-                background-color: #686de0;
-                border-bottom-left-radius: 30px;
-                border-bottom-right-radius: 30px;
-                .fotocontainer {
-                    margin: auto;
-                    height: 180px;
-                    width: 180px;
-                    .foto {
-                        position: relative;
-                        border-radius: 90px;
-                        transform: translateY(-85px);
-                        background-color: white;
-                        padding: 10px;
-                    }
-                }
-                .footer_tekst {
-                    font-size: 30px;
-                    color: #fff;
-                    text-align: center;
-                    margin: 0px;
-                    transform: translateY(-80px);
-                    h1 {
-                        margin: 0px;
-                        padding: 0px;
-                    }
-                    p {
-                        color: #c3cfe2;
-                    }
-                }
-            }
+    }
+    .voorgrond-onder__footer__tekst {
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+        margin: 0px;
+        transform: translateY(-80px);
+        h1 {
+            margin: 0px;
+            padding: 0px;
         }
+        p {
+            color: #c3cfe2;
+        }
+    }
+}
