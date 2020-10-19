@@ -1,13 +1,7 @@
-$testimonial-width: 90%;
+$testimonial-width: 600px;
 body {
     height: 100vh;
     width: 100%;
-}
-
-.achterGrondbox {
-    position: relative;
-    height: 100vh;
-    width: 45%;
     background-color: #c3cfe2;
     display: flex;
     flex-direction: column;
