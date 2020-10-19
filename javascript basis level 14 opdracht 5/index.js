@@ -17,18 +17,27 @@ else getal2 = Math.floor(getal2);
 let aantalKeerGeraden = 1;
 if (Math.floor(getal) === Math.floor(getal2)) { alert("Gefeliciteerd. Je hebt gewonnen"); }
 
+let stoppen = "N";
+if (getal == 0) {
+    alert('Je stopt het programma');
+    stoppen = 'J';
+}
 
-let geraden = "N";
-while (geraden == "N" && (aantalKeerGeraden <= 5)) {
+while ((stoppen == "N" && (aantalKeerGeraden <= 5))) {
     if (getal === 0) { alert("U breekt het programma af. Tot de volgende keer"); } else {
         alert("Dat is niet correct");
         if (aantalKeerGeraden == 5)
             alert("U heeft 5 keer geraden en mag niet meer. Dag " + naam);
         else {
-            let getal = prompt("Voer een getal tussen de 1 en 25 in om te beginnen met raden (0 breekt programma af) ");
-            if (Math.floor(getal) === Math.floor(getal2)) {
-                alert("Gefeliciteerd. Je hebt gewonnen.");
-                geraden = "J";
+            let getal = prompt("Voer een getal tussen de " + mingetal + " en " + maxgetal + " om te raden (0 breekt het programma af) ");
+            if (getal == 0) {
+                stoppen = 'J';
+                alert('Je stopt het programma');
+            } else {
+                if (Math.floor(getal) === Math.floor(getal2)) {
+                    alert("Gefeliciteerd. Je hebt gewonnen.");
+                    stoppen = "J";
+                }
             }
         }
         aantalKeerGeraden++;
