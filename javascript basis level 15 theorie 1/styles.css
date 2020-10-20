@@ -12,7 +12,9 @@ header {
   margin: auto;
   width: 50%;
   height: 100vh;
-  border: 3px solid lightgrey;
+  border-right: 3px solid lightgrey;
+  border-left: 3px solid lightgrey;
+  border-right: 3px solid lightgrey;
   padding: 0px;
 }
 
@@ -32,11 +34,17 @@ p {
 }
 
 li {
+  position: relative;
   height: 15vh;
-  width: 60%;
+  width: 100%;
   font-size: 30px;
   list-style-type: none;
   margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 header {
@@ -48,11 +56,19 @@ header {
 
 #page-banner {
   text-align: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 .delete {
   border: 3px solid black;
   background-color: purple;
+  height: 1em;
+  width: 80px;
+}
+
+.name {
+  width: 400px;
 }
 
 #add-book {
@@ -76,5 +92,8 @@ header {
   background-color: purple;
   font-size: 30px;
   margin: 0px;
+  border-left: lightgrey;
+  border-bottom: lightgrey;
+  border-right: lightgrey;
 }
 /*# sourceMappingURL=styles.css.map */

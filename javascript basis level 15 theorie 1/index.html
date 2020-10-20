@@ -24,6 +24,10 @@
             <h2 class="title">Books to read</h2>
             <ul>
                 <li>
+                    <span class="name">Name of the wind</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
                     <span class="name">The wise man's fear</span>
                     <span class="delete">delete</span>
                 </li>
@@ -42,7 +46,10 @@
             <button>add</button>
         </form>
     </div>
-    <script src="index.js"></script>
+    <!--ipv van defer kun je ook async toepassen. Echter : defer doet het in de volgorde van scripts in een document
+                                                           async doet het op snelheid van laden . Defer heeft dus voorkeur. -->
+    <script defer src="index.js"></script>
+    <!-- er wordt in level 15 aangeraden om dit statement in de header te zetten -->
 </body>
 
 </html>
