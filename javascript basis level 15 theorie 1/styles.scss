@@ -12,9 +12,7 @@
         margin: auto;
         width: 50%;
         height: 100vh;
-        border-right: 3px solid lightgrey;
-        border-left: 3px solid lightgrey;
-        border-right: 3px solid lightgrey;
+        border: 3px solid lightgrey;
         padding: 0px;
     }
     
@@ -89,7 +87,4 @@
         background-color: purple;
         font-size: 30px;
         margin: 0px;
-        border-left: lightgrey;
-        border-bottom: lightgrey;
-        border-right: lightgrey;
     }
