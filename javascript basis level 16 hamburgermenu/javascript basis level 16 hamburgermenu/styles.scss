@@ -1,0 +1,113 @@
+.hamburger {
+    width: 100px;
+    height: 100px;
+}
+
+li {
+    position: relative;
+    height: 25%;
+    width: 50%;
+    margin: 20px;
+    font-size: 40px;
+}
+
+.fontDikgedrukt {
+    font-weight: bold;
+}
+
+.fontNormaal {
+    font-weight: normal;
+}
+
+body {
+    background-color: lightgrey;
+    content: "default";
+}
+
+.home {
+    background-color: lightgrey;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.green {
+    background-color: green;
+}
+
+#kleurenkeuze {
+    display: flex;
+    font-size: 20px;
+}
+
+.textInhoud {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 80vh;
+    font-size: 100px;
+    color: white;
+}
+
+#letterBox {
+    font-size: 20px;
+    width: 1000px;
+}
+
+.letterKeuzeGrey {
+    width: 20px;
+    background: lightgrey;
+}
+
+.letterKeuzeOrange {
+    margin: 20px;
+    background: orange;
+}
+
+.letterKeuzeGreen {
+    margin: 20px;
+    background: green;
+}
+
+.letterKeuzePurple {
+    margin: 20px;
+    background-color: purple;
+}
+
+.letterKeuzeRed {
+    margin: 20px;
+    background-color: red;
+}
+
+input[type="text"] {
+    width: 30px;
+    margin-left: 10px;
+}
+
+#tussenruimte {
+    position: relative;
+    width: 100px;
+}
+
+.breedte {
+    width: 70px
+}
+
+;
+
+/*
+p {
+    width: 100px;
+}
+*/
