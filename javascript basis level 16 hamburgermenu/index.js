@@ -1,8 +1,3 @@
-function radioButtonsDefinitie() {
-
-
-}
-
 function pasLetterBoxAan(kleurtel, letterBox) {
     if (letterBox.classList.contains("letterKeuzeGrey"))
         letterBox.classList.remove("letterKeuzeGrey");
@@ -15,7 +10,6 @@ function pasLetterBoxAan(kleurtel, letterBox) {
     if (letterBox.classList.contains("letterKeuzePurple"))
         letterBox.classList.remove("letterKeuzePurple");
 
-    console.log(letterBox);
     switch (kleurtel) {
         case 0:
             i = 0;
@@ -34,7 +28,6 @@ function pasLetterBoxAan(kleurtel, letterBox) {
         case 4:
             letterBox.classList.add("letterKeuzeGreen");
     }
-    console.log(letterBox);
 }
 
 function zetKleurTerug() {
@@ -56,23 +49,23 @@ function veranderAchtergrondKleur(tel2) {
     switch (tel2) {
         case 0:
             pagina.classList.add("lightgrey");
-            /*achtergrondText.innerHTML = "";*/
+            achtergrondKleurWoord.textContent = "";
             break;
         case 1:
             pagina.classList.add("red");
-            /*achtergrondText.innerHTML = "red";*/
+            achtergrondKleurWoord.textContent = "red";
             break;
         case 2:
             pagina.classList.add("orange");
-            /*achtergrondText.innerHTML = "orange";*/
+            achtergrondKleurWoord.textContent = "orange";
             break;
         case 3:
             pagina.classList.add("purple");
-            /*achtergrondText.innerHTML = "purple";*/
+            achtergrondKleurWoord.textContent = "purple";
             break;
         case 4:
             pagina.classList.add("green"); /* laatste case geen break*/
-            /*achtergrondText.innerHTML = "green";*/
+            achtergrondKleurWoord.textContent = "green";
     }
     pasLetterBoxAan(tel2, letterBox);
 }
@@ -86,42 +79,30 @@ function wijzigRadioButtons(tel) {
     }
     parent = kleurenRadioArr[tel].parentElement;
     kleurenRadioArr[tel].checked = "true";
-    console.log('de waarde wordt : ' + kleurenRadioArr[tel].value);
     parent.classList.add("fontDikgedrukt");
 }
 
-
-function maakschermschoon(tel) {
-    kleurenregels.innerHTML = "";
-    console.log("voor Radio buttons");
-    wijzigRadioButtons(tel);
-    console.log("na radiobuttons");
-    veranderAchtergrondKleur(tel);
-    console.log("na achtergrondkleur");
-    let hamburger = document.querySelector('.hamburger');
-    hamburger.addEventListener('click', menuklaptuit);
-    console.log('maak scherm schoon : ' + tel.toString());
-    pasLetterBoxAan(tel, letterBox)
-    geklikt = false;
-}
-
-
-function menuklaptuit() {
-    console.log("binnen menu klapt uit");
-    kleurenregels.innerHTML = "<ul>";
-    kleurenregels.innerHTML += "<li class='home kleur'>home</li>";
-    kleurenregels.innerHTML += "<li class='red  kleur'>red</li>";
-    kleurenregels.innerHTML += "<li class='orange kleur'>orange</li>";
-    kleurenregels.innerHTML += "<li class='purple kleur'>purple</li>";
-    kleurenregels.innerHTML += "<li class='green kleur'>green</li>";
-    kleurenregels.innerHTML += "</ul>"
+function menuklaptuit(tel2) {
+    if (kleurenregels.classList.contains("maakOpaque"))
+        kleurenregels.classList.remove("maakOpaque");
     let kleuren = document.getElementsByClassName("kleur");
-    let kleurenarr = Array.from(kleuren);
-    for (let i = 0; i < kleuren.length; i++) {
-        kleurenarr[i].addEventListener('click', function(e) { maakschermschoon(i) });
+    let kleurenArr = Array.from(kleuren);
+    for (let i = 0; i < kleurenArr.length; i++) {
+        kleurenArr[i].addEventListener('click', function(e) {
+            kleurenregels.classList.add("maakOpaque");
+            wijzigRadioButtons(i);
+            veranderAchtergrondKleur(i);
+            let hamburger = document.querySelector('.hamburger');
+            hamburger.addEventListener('click', menuklaptuit);
+            pasLetterBoxAan(i, letterBox);
+            geklikt = false;
+        });
     };
 }
 
+achtergrondKleurWoord = document.getElementById("achtergrondKleurWoord");
+
+// hamburger met kleurenregels klik definitie 
 let pagina = document.querySelector('body');
 let hamburger = document.querySelector('.hamburger');
 let kleurenregels = document.getElementById("kleurenregels");
@@ -132,7 +113,7 @@ hamburger.addEventListener('click', function(e) {
     geklikt = true;
 });
 
-// Hieronder de twee hoover functies : naar het icoontje toe en er van af 
+// hoover definitie  
 hamburger.addEventListener('mouseover', function(e) {
     geklikt = "false";
     menuklaptuit();
@@ -140,15 +121,13 @@ hamburger.addEventListener('mouseover', function(e) {
 
 hamburger.addEventListener('mouseout', function(e) {
     if (geklikt != true)
-        kleurenregels.innerHTML = "";
+        kleurenregels.classList.add("maakOpaque");
 });
 
-radioButtonsDefinitie();
-
+// radiobuttons definitie
 let kleurKeuze = document.getElementsByClassName('radio');
 let kleurenRadioArr = Array.from(kleurKeuze);
 let parent = kleurenRadioArr[0].parentElement;
-console.log("aantal radiobuttons : " + kleurKeuze.length);
 for (let i = 0; i < kleurenRadioArr.length; i++) {
     kleurenRadioArr[i].addEventListener('click', function(e) {
         parent = kleurenRadioArr[i].parentElement;
@@ -166,6 +145,8 @@ for (let i = 0; i < kleurenRadioArr.length; i++) {
     })
 }
 
+
+// gekozen letter definitie
 let gekozenLetter = document.querySelector("input[type='text']");
 let letterBox = gekozenLetter.parentElement;
 gekozenLetter.addEventListener("keyup", function(e) {
@@ -175,7 +156,7 @@ gekozenLetter.addEventListener("keyup", function(e) {
         e.preventDefault();
         let karAscii = e.keyCode;
         let karKleurString = "";
-        switch (e.keyCode) {
+        switch (karAscii) {
             case 49:
                 i = 0;
                 karKleurString = "Default";
@@ -201,7 +182,6 @@ gekozenLetter.addEventListener("keyup", function(e) {
         gekozenLetter.value = "";
         wijzigRadioButtons(i);
         veranderAchtergrondKleur(i);
-        console.log("pas letterbox aan");
         pasLetterBoxAan(i, letterBox);
     } else {
         e.preventDefault();

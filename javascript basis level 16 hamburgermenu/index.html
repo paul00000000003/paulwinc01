@@ -14,7 +14,7 @@
     <!--Voor de basisfunctionaliteit is zowel het bovenstaand plaatje als de onderstaande div op kleurregels nodig maar voor de rest niet-->
     <img class="hamburger" src="hamburger.png" width="100%" alt="hamburger" />
 
-    <!-- de onderstaande radiobuttons maogen continu zichtbaar zijn. Ze hebben geen effect op het uitklappen van het menu -->
+    <!-- radiobuttons-->
     <div id="kleurenkeuze">
         <label>Kleurenkeuze : </label>
         <label class="label"><span class="breedte">home</span><input type="radio" class="radio" name="kleur" value="home"/></label>
@@ -23,18 +23,28 @@
         <label class="label"><span class="breedte">purple</span><input type="radio" class="radio" name="kleur" value="purple"/></label>
         <label class="label"><span class="breedte">green</span><input type="radio" class="radio" name="kleur" value="green"/></label>
     </div>
-    <!-- de onderstaande letterbox vormen de basis voor de uitvoer van de keyup in index.js-->
+    <!-- de letterinvoer-->
     <div id="letterBox">
-        <label class="letterKeuzeGrey"><span class="breedte">Letterkeuze    : </span><input type="text" /> (1: home 2:red 3: orange 4: purple 5:green) </label>
+        <label class="letterKeuzeGrey">
+            <span class="breedte">Letterkeuze    : </span>
+            <input type="text" /> (1: home 2:red 3: orange 4: purple 5:green) 
+        </label>
     </div>
 
-    <!-- de onderstaande div op kleurenregels vormen de basis voor het ul lijstje, waar uiteindelijk twee soorten waarden voor worden toegekend
-         het ul lijstje met de li regels danwel een leeg. Het woordt met innerHTML gevuld. Hierbij zou er evt. voor kunnen worden gekozen om 
-         het lijstje hier wel op te nemen en middels opacity van de div/ul de waarde van 0 naar 1 te wijzigen en vice versa. 
-    -->
-    <div id="kleurenregels">
+    <!-- hieronder het ul lijstje  -->
+    <div id="kleurenregels" class="maakOpaque">
+        <ul>
+            <li class="home kleur">home</li>
+            <li class="red  kleur">red</li>
+            <li class="orange kleur">orange</li>
+            <li class="purple kleur">purple</li>
+            <li class="green kleur">green</li>
+        </ul>
     </div>
 
+    <div id="achtergrondKleurWoord">
+
+    </div>
 </body>
 
 </html>

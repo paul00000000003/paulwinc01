@@ -1,6 +1,8 @@
 .hamburger {
   width: 100px;
   height: 100px;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
 }
 
 li {
@@ -9,6 +11,11 @@ li {
   width: 50%;
   margin: 20px;
   font-size: 40px;
+}
+
+#kleurenregels {
+  -webkit-transition: opacity 1000ms ease-in;
+  transition: opacity 1000ms ease-in;
 }
 
 .fontDikgedrukt {
@@ -113,9 +120,18 @@ input[type="text"] {
   width: 70px;
 }
 
-/*
-p {
-    width: 100px;
+.maakOpaque {
+  opacity: 0;
 }
-*/
+
+.maakZichtbaar {
+  opacity: 1;
+}
+
+#achtergrondKleurWoord {
+  text-align: center;
+  font-size: 80px;
+  color: white;
+  height: 50vh;
+}
 /*# sourceMappingURL=styles.css.map */

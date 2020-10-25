@@ -1,6 +1,7 @@
 .hamburger {
     width: 100px;
     height: 100px;
+    transition: opacity 200ms ease-in;
 }
 
 li {
@@ -9,6 +10,10 @@ li {
     width: 50%;
     margin: 20px;
     font-size: 40px;
+}
+
+#kleurenregels {
+    transition: opacity 1000ms ease-in;
 }
 
 .fontDikgedrukt {
@@ -101,13 +106,21 @@ input[type="text"] {
 }
 
 .breedte {
-    width: 70px
+    width: 70px;
+}
+
+.maakOpaque {
+    opacity: 0;
 }
 
 ;
-
-/*
-p {
-    width: 100px;
+.maakZichtbaar {
+    opacity: 1;
 }
-*/
+
+#achtergrondKleurWoord {
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    height: 50vh;
+}
