@@ -83,13 +83,13 @@ function wijzigRadioButtons(tel) {
 }
 
 function menuklaptuit(tel2) {
-    if (kleurenregels.classList.contains("maakOpaque"))
-        kleurenregels.classList.remove("maakOpaque");
+    if (kleurenregels.classList.contains("schuifLinks"))
+        kleurenregels.classList.remove("schuifLinks");
     let kleuren = document.getElementsByClassName("kleur");
     let kleurenArr = Array.from(kleuren);
     for (let i = 0; i < kleurenArr.length; i++) {
         kleurenArr[i].addEventListener('click', function(e) {
-            kleurenregels.classList.add("maakOpaque");
+            kleurenregels.classList.add("schuifLinks");
             wijzigRadioButtons(i);
             veranderAchtergrondKleur(i);
             let hamburger = document.querySelector('.hamburger');
@@ -121,7 +121,7 @@ hamburger.addEventListener('mouseover', function(e) {
 
 hamburger.addEventListener('mouseout', function(e) {
     if (geklikt != true)
-        kleurenregels.classList.add("maakOpaque");
+        kleurenregels.classList.add("schuifLinks");
 });
 
 // radiobuttons definitie

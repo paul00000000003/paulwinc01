@@ -1,7 +1,7 @@
 .hamburger {
     width: 100px;
     height: 100px;
-    transition: opacity 200ms ease-in;
+    transition: margin-left 200ms ease-in;
 }
 
 li {
@@ -10,10 +10,13 @@ li {
     width: 50%;
     margin: 20px;
     font-size: 40px;
+    list-style-type: none;
+    border: 3px solid black;
 }
 
 #kleurenregels {
-    transition: opacity 1000ms ease-in;
+    width: 1000px;
+    transition: margin-left 1000ms ease-out;
 }
 
 .fontDikgedrukt {
@@ -109,13 +112,13 @@ input[type="text"] {
     width: 70px;
 }
 
-.maakOpaque {
-    opacity: 0;
+.schuifLinks {
+    margin-left: -1500px;
 }
 
 ;
 .maakZichtbaar {
-    opacity: 1;
+    margin-left: 20px;
 }
 
 #achtergrondKleurWoord {
